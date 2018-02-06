@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 5px;
+
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/annie-spratt-199471.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+header .arrow{
+    color: white;
+    font-size: 13rem;
+    position: absolute;
+    margin: 0 1% ;
+    text-align: center;
+}
+section .arrow-section{
+     color: white;
+    font-size: 13rem;
+    position: absolute;
+    margin: 0 1% ;
+    text-align: center;
+}
+
+
+
+header #left-arrow {
+
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+header #top-arrow {
+
+    
+
+
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    
+  
+}
+
+
+header #right-arrow {
+
+      top: 50%;
+    transform:translateY(-50%);
+    right: 0;
+ 
+}
+
+header #down-arrow {
+
+   
+
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.side{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}

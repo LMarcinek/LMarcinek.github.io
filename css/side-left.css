@@ -1,0 +1,11 @@
+#side-left{
+ background-color: rgba(33, 29, 29, 0.81);
+ left: -100%;
+   
+}
+#close-side-left{
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
