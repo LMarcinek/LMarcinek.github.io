@@ -1,0 +1,62 @@
+#side-top{
+    background: linear-gradient(black, rgba(0, 0, 0, 0.72));
+    top: -100vh;
+    
+}
+#close-side-top{
+    bottom: 0;
+      margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+#contact{
+    font-size: 1500%;
+    text-align: center;
+    margin-top: 20px;
+  font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    display: block;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-wrap: wrap;
+    
+    
+}
+.icon-contact{
+    color: white;
+    font-size: 20rem;
+    text-align: center;
+    width: 25%;
+}
+
+ a {
+    color: white;
+    text-decoration: none;
+}
+
+ .icon-contact a:hover 
+{
+     color:white; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+.icon-contact a p
+{
+    font-size: 6rem;
+     font-family: 'Dosis', sans-serif;
+}
+#mail{
+    font-size: 5.5rem;
+     font-family: 'Dosis', sans-serif;;
+}
+#close-side-top{
+    font-size: 25rem;
+}

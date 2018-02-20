@@ -1,3 +1,9 @@
+@import url("side-left.css"); 
+@import url('side-top.css');
+@import url('side-right.css');
+@import url('side-down.css');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +13,43 @@
 
 html {
     font-size: 5px;
+    color: white;
+      font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    
 
+}
+#preloader{
+    width: 100%;    
+    height: 100%;
+    background-color: black;
+    z-index:999999;
+    position: fixed;
+    animation: lost 3s infinite;
+}
+@keyframes lost {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.preloader-hidding{
+    opacity: 0;
+}
+.preloader-hiden{
+    display: none;
+}
+#preloader img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 header {
@@ -17,7 +59,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Oswald', sans-serif;
+ 
     z-index: 1;
     overflow: hidden;
     
@@ -29,6 +71,7 @@ header .arrow{
     position: absolute;
     margin: 0 1% ;
     text-align: center;
+    
 }
 section .arrow-section{
      color: white;
@@ -87,3 +130,24 @@ header #down-arrow {
     position: absolute;
     z-index: 2;
 }
+
+p#pa {
+    transform: rotate(-90deg) translateY(-50%);
+    display: inline-block;
+    font-size: 5rem;
+    position: absolute;
+    left: 0;
+    
+        
+}
+p#p-top{
+    font-size: 5rem;
+}
+
+
+
+/*@import url('side-top.css')*/
+/*
+@import url('side-right.css')
+@import url('side-down.css')
+*/
