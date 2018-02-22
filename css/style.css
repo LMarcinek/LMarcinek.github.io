@@ -65,6 +65,14 @@ header {
     
 }
 
+.mask h1{
+    position: absolute;
+    font-size: 20rem;
+    top: 25%;
+    left: 15%;
+    
+}
+
 header .arrow{
     color: white;
     font-size: 13rem;

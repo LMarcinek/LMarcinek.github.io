@@ -82,13 +82,6 @@ const move = (e) => {
             }, 1000)
             $('.arrow').hide();
             
-        case 38:
-               $('#side-left').animate({
-        left: '-100%',
-    }, 1000)
-    $('.arrow').show()
-            break;
-
             break;
 
         case 38:

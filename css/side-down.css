@@ -10,3 +10,7 @@
     right: 0;
     left: 0;
 }
+#container_project{
+    height: 80vh;
+    width: 80%;
+}
