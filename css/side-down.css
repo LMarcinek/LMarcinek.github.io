@@ -11,6 +11,73 @@
     left: 0;
 }
 #container_project{
-    height: 80vh;
-    width: 80%;
+    display: flex;
+  flex-wrap: wrap;
+  
+    justify-content: space-around;
+    
+    
+}
+
+
+.project{
+ 
+  width: 300px;
+    height: 300px;
+    margin-bottom: 10%;
+    margin: 1% 5%;
+      background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: 2;
+    position: relative;
+
+}
+
+.box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    
+}
+
+.white{
+    background: rgba(118, 108, 108, 0.85);
+    
+}
+.black{
+    background:rgba(102, 0, 153, 0.89);
+}
+.icon-pr{
+    
+    width: 45%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+    top: 30%;
+    position: absolute;
+}
+.icon-pr:hover{
+    transform: rotate(360deg)  ;
+    transition-duration: 0.5s;
+}
+.git{
+    background-image: url(../img/project/mark-github.png);
+    left: 2%;
+}
+.jsbin{
+    background-image: url(../img/project/jsbin.png);
+    right: 2%;
+    transform: scale(0.6)
+}
+
+
+#art{
+    background-image: url(../img/project/art.png);
+    
+        
 }
