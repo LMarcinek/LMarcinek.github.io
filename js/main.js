@@ -1,14 +1,14 @@
-$("body").css("overflow", "hidden"); 
+$("body").css("overflow", "hidden");
 
-$('#left-arrow').on('click',function(){
+$('#left-arrow').on('click', function () {
     $('#side-left').animate({
-        left:'0',
+        left: '0',
     }, 1000)
     $('.arrow').hide();
 })
 
 
-$('#side-left').on('click',function(){
+$('#side-left').on('click', function () {
     $('#side-left').animate({
         left: '-100%',
     }, 1000)
@@ -17,14 +17,14 @@ $('#side-left').on('click',function(){
 
 
 
-$('#top-arrow').on('click',function(){
+$('#top-arrow').on('click', function () {
     $('#side-top').animate({
-        top:'0',
+        top: '0',
     }, 1000)
     $('.arrow').hide();
 });
 
-$('#side-top').on('click',function(){
+$('#side-top').on('click', function () {
     $('#side-top').animate({
         top: '-100%',
     }, 1000)
@@ -33,15 +33,15 @@ $('#side-top').on('click',function(){
 
 
 
-$('#right-arrow').on('click',function(){
+$('#right-arrow').on('click', function () {
     $('#side-right').animate({
-        right:'0',
+        right: '0',
     }, 1000)
     $('.arrow').hide();
 })
 
 
-$('#side-right').on('click',function(){
+$('#side-right').on('click', function () {
     $('#side-right').animate({
         right: '-100%',
     }, 1000)
@@ -51,14 +51,14 @@ $('#side-right').on('click',function(){
 
 
 
-$('#down-arrow').on('click',function(){
+$('#down-arrow').on('click', function () {
     $('#side-down').animate({
-        top:'0',
+        top: '0',
     }, 1000)
     $('.arrow').hide();
 });
 
-$('#side-down').on('click',function(){
+$('#side-down').on('click', function () {
     $('#side-down').animate({
         top: '100vh',
     }, 1000)
@@ -67,10 +67,69 @@ $('#side-down').on('click',function(){
 
 
 
+///////move by button
+
+
+const move = (e) => {
+    console.log(e.keyCode)
+
+
+
+    switch (e.keyCode) {
+        case 37:
+            $('#side-left').animate({
+                left: '0',
+            }, 1000)
+            $('.arrow').hide();
+            
+        case 38:
+               $('#side-left').animate({
+        left: '-100%',
+    }, 1000)
+    $('.arrow').show()
+            break;
+
+            break;
+
+        case 38:
+            $('#side-top').animate({
+                top: '0',
+            }, 1000)
+            $('.arrow').hide();
+            break;
+
+        case 39:
+            $('#side-right').animate({
+                right: '0',
+            }, 1000)
+            $('.arrow').hide();
+
+            break;
+
+        case 40:
+            $('#side-down').animate({
+                top: '0',
+            }, 1000)
+            $('.arrow').hide();
+            break;
+        case 32:
+
+            break;
+
+
+
+    }
+
+}
+
+window.addEventListener("keydown", move);
+
+
+
 // preloader
 
- var preloaderEl = document.querySelector('#preloader')
-setTimeout(function(){
+var preloaderEl = document.querySelector('#preloader')
+setTimeout(function () {
     preloaderEl.classList.add('preloader-hidding')
     preloaderEl.classList.add('preloader-hiden');
     preloaderEl.classList.remove('preloader-hidding');
