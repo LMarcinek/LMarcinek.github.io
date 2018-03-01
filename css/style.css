@@ -2,6 +2,7 @@
 @import url('side-top.css');
 @import url('side-right.css');
 @import url('side-down.css');
+@import url('rwd.css');
 
 
 * {

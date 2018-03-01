@@ -22,8 +22,8 @@
 
 .project{
  
-  width: 300px;
-    height: 300px;
+  width: 280px;
+    height: 280px;
     margin-bottom: 10%;
     margin: 2% 3%;
       background-position: center;
@@ -86,3 +86,24 @@ box-shadow: 0px 0px 93px 2px rgba(255,255,255,1);
     
         
 }
+
+#example{
+    background-image: url(../img/project/example-portofio.png);
+    
+        
+}#list-to-do{
+    background-image: url(../img/project/list-to-do.png);
+    
+        
+}#bitcoin{
+    background-image: url(../img/project/bitcoin.png);
+    
+        
+}#bootstrap-pr{
+    background-image: url(../img/project/bs-work.png);
+    
+        
+}#cash{
+    background-image: url(../img/project/app-finase.png);
+    
+        

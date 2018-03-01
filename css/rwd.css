@@ -1,0 +1,63 @@
+@media (min-width: 1024px) {
+   
+    .project{
+        
+        
+    }
+}
+
+
+@media (max-width: 1023px) {
+    .project{
+        width: 200px;
+        height: 200px
+        
+    }
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+
+@media (max-width: 734px) {
+
+ .project{
+        width: 150px;
+        height: 150px
+        
+    }
+     .icon{
+        width: 80px;
+        height: 80px;
+    }
+
+
+@media (max-width: 599px) {
+    
+     .project{
+        width: 150px;
+        height: 150px
+        
+    } .icon{
+        width: 75px;
+        height: 75px;
+    }
+
+}
+    
+    @media (max-width: 325px) {
+    
+     .project{
+        width: 100px;
+        height: 100px
+        
+    }
+         .icon{
+        width: 50px;
+        height: 50px;
+    }
+
+}
