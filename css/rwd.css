@@ -38,12 +38,13 @@
 @media (max-width: 599px) {
     
      .project{
-        width: 150px;
-        height: 150px
+        width: 120px;
+        height: 120px
         
     } .icon{
         width: 75px;
         height: 75px;
+        margin: 5px;
     }
 
 }
@@ -51,13 +52,14 @@
     @media (max-width: 325px) {
     
      .project{
-        width: 100px;
-        height: 100px
+        width: 90px;
+        height: 90px
         
     }
          .icon{
         width: 50px;
         height: 50px;
+        margin: 5px;
     }
 
 }
