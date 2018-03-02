@@ -24,6 +24,9 @@
 
 @media (max-width: 734px) {
 
+    #text{
+        font-size:4rem;
+    }
  .project{
         width: 150px;
         height: 150px
@@ -32,10 +35,19 @@
      .icon{
         width: 80px;
         height: 80px;
-    }
+    }.icon-contact{
+   font-size: 15rem;
+    width: 100%;
+}
 
 
 @media (max-width: 599px) {
+    h1#technology,
+    #about,
+    #contact,
+    #project{
+        font-size: 10rem;
+    }
     
      .project{
         width: 120px;
@@ -50,6 +62,9 @@
 }
     
     @media (max-width: 325px) {
+          #text{
+        font-size:3rem;
+           }
     
      .project{
         width: 90px;

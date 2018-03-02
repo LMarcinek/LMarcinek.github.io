@@ -1,5 +1,7 @@
 $("body").css("overflow", "hidden");
 
+let lock =false;
+
 $('#left-arrow').on('click', function () {
     $('#side-left').animate({
         left: '0',
@@ -8,7 +10,7 @@ $('#left-arrow').on('click', function () {
 })
 
 
-$('#side-left').on('click', function () {
+$('#side-left').on('click', function  () {
     $('#side-left').animate({
         left: '-100%',
     }, 1000)
@@ -73,7 +75,7 @@ $('#side-down').on('click', function () {
 const move = (e) => {
     console.log(e.keyCode)
 
-
+ if(lock==false){
 
     switch (e.keyCode) {
         case 37:
@@ -81,6 +83,7 @@ const move = (e) => {
                 left: '0',
             }, 1000)
             $('.arrow').hide();
+            lock =true;
             
             break;
 
@@ -89,6 +92,7 @@ const move = (e) => {
                 top: '0',
             }, 1000)
             $('.arrow').hide();
+            lock =true;
             break;
 
         case 39:
@@ -96,6 +100,7 @@ const move = (e) => {
                 right: '0',
             }, 1000)
             $('.arrow').hide();
+            lock =true;
 
             break;
 
@@ -104,6 +109,7 @@ const move = (e) => {
                 top: '0',
             }, 1000)
             $('.arrow').hide();
+            lock =true;
             break;
         case 32:
 
@@ -112,6 +118,33 @@ const move = (e) => {
 
 
     }
+ }else{
+           $('#side-right').animate({
+        right: '-100%',
+    }, 1000)
+     
+    $('#side-left').animate({
+        left: '-100%',
+    }, 1000)
+    $('.arrow').show()
+     
+       $('#side-down').animate({
+        top: '100vh',
+    }, 1000)
+     
+     
+   
+ 
+       $('#side-top').animate({
+        top: '-100%',
+    }, 1000)
+
+     lock=false;
+     
+     
+     
+     
+ }
 
 }
 
